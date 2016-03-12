@@ -26,4 +26,49 @@ public class Schwertgenerator {
 		return item;
 	}
 
+	public static ItemStack getBlendT2(Player p) {
+		ItemStack item = new ItemStack(Material.DIAMOND_SWORD);
+		ItemMeta meta = item.getItemMeta();
+		meta.setDisplayName("ßbBlendendes Schwert Tier 2");
+		Lores.add("ßaFortressß8-ßaCombatß8-ßaItem");
+		Lores.add("ß9ßm------------------------------");
+		Lores.add("ß650%-ige Chance deinen Gegner erblinden zu lassen.");
+		Lores.add("ß9ßm------------------------------");
+		Lores.add("ßaBesitzer: ße{USER}".replace("{USER}", p.getName()));
+		meta.setLore(Lores);
+		item.setItemMeta(meta);
+		Lores.clear();
+		return item;
+	}
+
+	public static ItemStack getUebelT1(Player p) {
+		ItemStack item = new ItemStack(Material.DIAMOND_SWORD);
+		ItemMeta meta = item.getItemMeta();
+		meta.setDisplayName("ßb‹belkeitsschwert Tier 1");
+		Lores.add("ßaFortressß8-ßaCombatß8-ßaItem");
+		Lores.add("ß9ßm------------------------------");
+		Lores.add("ß625%-ige Chance dass deinem Gegner schlecht wird.");
+		Lores.add("ß9ßm------------------------------");
+		Lores.add("ßaBesitzer: ße{USER}".replace("{USER}", p.getName()));
+		meta.setLore(Lores);
+		item.setItemMeta(meta);
+		Lores.clear();
+		return item;
+	}
+
+	public static ItemStack getUebelT2(Player p) {
+		ItemStack item = new ItemStack(Material.DIAMOND_SWORD);
+		ItemMeta meta = item.getItemMeta();
+		meta.setDisplayName("ßb‹belkeitsschwert Tier 2");
+		Lores.add("ßaFortressß8-ßaCombatß8-ßaItem");
+		Lores.add("ß9ßm------------------------------");
+		Lores.add("ß650%-ige Chance dass deinem Gegner schlecht wird.");
+		Lores.add("ß9ßm------------------------------");
+		Lores.add("ßaBesitzer: ße{USER}".replace("{USER}", p.getName()));
+		meta.setLore(Lores);
+		item.setItemMeta(meta);
+		Lores.clear();
+		return item;
+	}
+
 }
