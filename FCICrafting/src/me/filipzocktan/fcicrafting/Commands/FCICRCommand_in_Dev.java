@@ -6,9 +6,9 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import me.filipzocktan.fcicrafting.Items.Schwertgenerator;
 
@@ -16,7 +16,10 @@ public class FCICRCommand_in_Dev implements CommandExecutor {
 
 	final private ItemStack INKSACK = new ItemStack(Material.INK_SACK);
 	final private ItemStack DIASCHWERT = new ItemStack(Material.DIAMOND_SWORD);
-	public ItemStack SLIME = new ItemStack(Material.SLIME_BALL);
+	final private ItemStack GLASSCHEIBE_GRAU = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) 7);
+	final private ItemStack AIR = new ItemStack(Material.AIR, 1, (short) 7);
+	final private ItemStack SLIME = new ItemStack(Material.SLIME_BALL);
+	public static Inventory inv = null; 
 	
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
@@ -24,13 +27,27 @@ public class FCICRCommand_in_Dev implements CommandExecutor {
 			Player p = (Player) sender;
 			if (args.length == 1) {
 				if (args[0].equalsIgnoreCase("1")) {
-					Inventory inv = Bukkit.getServer().createInventory(null, InventoryType.CRAFTING);
-					inv.setItem(1, INKSACK);
-					inv.setItem(7, INKSACK);
-					inv.setItem(4, DIASCHWERT);
-					inv.setItem(3, SLIME);
-					inv.setItem(5, SLIME);
-					inv.setItem(9, Schwertgenerator.getBlendT1(p));
+					inv = Bukkit.getServer().createInventory(null, 27, "Blenendes Schwert Tier 1");
+					ItemMeta meta = GLASSCHEIBE_GRAU.getItemMeta();
+					meta.setDisplayName(" ");
+					GLASSCHEIBE_GRAU.setItemMeta(meta);
+					for(int i = 0; i < 27; i++) {
+//						if(i != 2 || i != 3 || i != 4 || i != 21 || i != 12 || i != 11 || i != 13 || i != 15 || i != 20 || i != 22) {
+//							inv.setItem(i, GLASSCHEIBE_GRAU);
+//						}
+						inv.setItem(i, GLASSCHEIBE_GRAU);
+					}
+					inv.setItem(2, AIR);
+					inv.setItem(3, INKSACK);
+					inv.setItem(4, AIR);
+					inv.setItem(20, AIR);
+					inv.setItem(21, INKSACK);
+					inv.setItem(22, AIR);
+					inv.setItem(12, DIASCHWERT);
+					inv.setItem(11, SLIME);
+					inv.setItem(13, SLIME);
+					inv.setItem(15, Schwertgenerator.getBlendT1(p));
+					p.openInventory(inv);
 				} else {
 					if (args[0].equalsIgnoreCase("2")) {
 						p.sendMessage("§a§l *-* Craftingrezept Nr. 2 *-*");
