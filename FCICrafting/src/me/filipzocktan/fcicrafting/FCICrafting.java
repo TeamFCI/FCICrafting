@@ -5,6 +5,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.filipzocktan.fcicrafting.Commands.FCICRCommand;
 import me.filipzocktan.fcicrafting.Commands.GetEffectSwordCommand;
 
 public class FCICrafting extends JavaPlugin {

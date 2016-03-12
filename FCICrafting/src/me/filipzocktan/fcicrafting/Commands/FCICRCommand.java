@@ -1,4 +1,4 @@
-package me.filipzocktan.fcicrafting;
+package me.filipzocktan.fcicrafting.Commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
