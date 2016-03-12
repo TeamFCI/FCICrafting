@@ -14,10 +14,10 @@ public class Schwertgenerator {
 	public static ItemStack getBlendT1(Player p){
 		ItemStack item = new ItemStack(Material.DIAMOND_SWORD);
 		ItemMeta meta = item.getItemMeta();
-		meta.setDisplayName("Blendendes Schwert Tier 1");
+		meta.setDisplayName("§bBlendendes Schwert Tier 1");
 		Lores.add("§aFortress§8-§aCombat§8-§aItem");
 		Lores.add("§9§m------------------------------");
-		Lores.add("§a25%-ige Chance deinen Gegner erblinden zu lassen.");
+		Lores.add("§625%-ige Chance deinen Gegner erblinden zu lassen.");
 		Lores.add("§9§m------------------------------");
 		Lores.add("§aBesitzer: §e{USER}".replace("{USER}", p.getName()));
 		meta.setLore(Lores);

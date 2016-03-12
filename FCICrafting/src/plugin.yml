@@ -9,3 +9,7 @@ commands:
     description: Zeigt Plugininfo an.
   fortresscombat1crafting:
     description: Zeigt Plugininfo an.
+  gefs:
+    description: Erhalte ein EffectSword
+  geteffectsword:
+    description: Erhalte ein EffectSword

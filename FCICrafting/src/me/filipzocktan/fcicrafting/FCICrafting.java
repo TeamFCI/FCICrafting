@@ -14,12 +14,12 @@ public class FCICrafting extends JavaPlugin {
 		PluginManager pm = this.getServer().getPluginManager();
 		pm.registerEvents(new PluginEnabeListener(), this);
 		FCICRCommand cFcicrCommand = new FCICRCommand();
-		getCommand("fcfcr").setExecutor(cFcicrCommand);
-		getCommand("fcicrafting").setExecutor(cFcicrCommand);
-		getCommand("fortresscombat1crafting").setExecutor(cFcicrCommand);
+		this.getCommand("fcicr").setExecutor(cFcicrCommand);
+		this.getCommand("fcicrafting").setExecutor(cFcicrCommand);
+		this.getCommand("fortresscombat1crafting").setExecutor(cFcicrCommand);
 		GetEffectSwordCommand cGetEffectSwordCommand = new GetEffectSwordCommand();
-		getCommand("gefs").setExecutor(cGetEffectSwordCommand);
-		getCommand("geteffectsword").setExecutor(cGetEffectSwordCommand);
+		this.getCommand("gefs").setExecutor(cGetEffectSwordCommand);
+		this.getCommand("geteffectsword").setExecutor(cGetEffectSwordCommand);
 		
 		for(Player p : Bukkit.getOnlinePlayers()){
 			p.sendMessage("§d§m----------------------------");

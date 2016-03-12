@@ -14,6 +14,11 @@ public class GetEffectSwordCommand implements CommandExecutor {
 		if (sender instanceof Player) {
 			Player p = (Player) sender;
 			if (p.hasPermission("fci.fci")) {
+				if (args.length == 0) {
+					p.sendMessage("§bEs geht!");
+				}
+				
+				
 				if (args.length == 1) {
 					int num = 20;
 					try {
@@ -40,6 +45,8 @@ public class GetEffectSwordCommand implements CommandExecutor {
 				} else {
 					p.performCommand("fcicr");
 				}
+			} else {
+				p.sendMessage("§cFehler: Du hast nicht diePermission dazu!");
 			}
 		} else {
 			sender.sendMessage("Du musst ein Spieler sein um dies auszuführen.");
