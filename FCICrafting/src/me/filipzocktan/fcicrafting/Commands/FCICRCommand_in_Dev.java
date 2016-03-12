@@ -21,6 +21,7 @@ public class FCICRCommand_in_Dev implements CommandExecutor {
 	final private ItemStack SLIME = new ItemStack(Material.SLIME_BALL);
 	final private ItemStack KUGELFISCH = new ItemStack(Material.RAW_FISH,1,(short) 3);
 	final private ItemStack FERM = new ItemStack(Material.FERMENTED_SPIDER_EYE);
+	final private ItemStack WART = new ItemStack(Material.NETHER_WARTS);
 	public static Inventory inv = null;
 
 	@Override
@@ -168,11 +169,52 @@ public class FCICRCommand_in_Dev implements CommandExecutor {
 										p.openInventory(inv);
 									} else {
 										if (args[0].equalsIgnoreCase("7")) {
-											p.sendMessage("N F N");
-											p.sendMessage("W D W");
-											p.sendMessage("N F N");
+											inv = Bukkit.getServer().createInventory(null, 27, "Vergiftungsschwert Tier 1");
+											ItemMeta meta = GLASSCHEIBE_GRAU.getItemMeta();
+											meta.setDisplayName(" ");
+											GLASSCHEIBE_GRAU.setItemMeta(meta);
+											for (int i = 0; i < 27; i++) {
+												inv.setItem(i, GLASSCHEIBE_GRAU);
+											}
+
+											/*
+											 * 02 03 04 11 12 13 15 20 21 22
+											 */
+											inv.setItem(2, AIR);
+											inv.setItem(3, FERM);
+											inv.setItem(4, AIR);
+											inv.setItem(20, AIR);
+											inv.setItem(21, FERM);
+											inv.setItem(22, AIR);
+											inv.setItem(12, DIASCHWERT);
+											inv.setItem(11, WART);
+											inv.setItem(13, WART);
+											inv.setItem(15, Schwertgenerator.getSlowT1(p));
+											p.openInventory(inv);
 										} else {
 											if (args[0].equalsIgnoreCase("8")) {
+												inv = Bukkit.getServer().createInventory(null, 27, "Vergiftungsschwert Tier 2s");
+												ItemMeta meta = GLASSCHEIBE_GRAU.getItemMeta();
+												meta.setDisplayName(" ");
+												GLASSCHEIBE_GRAU.setItemMeta(meta);
+												for (int i = 0; i < 27; i++) {
+													inv.setItem(i, GLASSCHEIBE_GRAU);
+												}
+
+												/*
+												 * 02 03 04 11 12 13 15 20 21 22
+												 */
+												inv.setItem(2, FERM);
+												inv.setItem(3, WART);
+												inv.setItem(4, FERM);
+												inv.setItem(20, FERM);
+												inv.setItem(21, WART);
+												inv.setItem(22, FERM);
+												inv.setItem(12, DIASCHWERT);
+												inv.setItem(11, WART);
+												inv.setItem(13, WART);
+												inv.setItem(15, Schwertgenerator.getSlowT2(p));
+												p.openInventory(inv);
 												p.sendMessage("F W F");
 												p.sendMessage("W D W");
 												p.sendMessage("F W F");

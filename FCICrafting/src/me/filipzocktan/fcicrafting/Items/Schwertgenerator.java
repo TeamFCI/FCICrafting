@@ -101,4 +101,35 @@ public class Schwertgenerator {
 		return item;
 	}
 
+	public static ItemStack getSlowT1(Player p) {
+		ItemStack item = new ItemStack(Material.DIAMOND_SWORD);
+		ItemMeta meta = item.getItemMeta();
+		meta.setDisplayName("§bVergiftungsschwert Tier 1");
+		Lores.add("§aFortress§8-§aCombat§8-§aItem");
+		Lores.add("§9§m------------------------------");
+		Lores.add("§625%-ige Chance, dass dein Gegner verlangsamt wird.");
+		Lores.add("§9§m------------------------------");
+		Lores.add("§aBesitzer: §e{USER}".replace("{USER}", p.getName()));
+		meta.setLore(Lores);
+		item.setItemMeta(meta);
+		Lores.clear();
+		return item;
+	}
+
+	public static ItemStack getSlowT2(Player p) {
+
+		ItemStack item = new ItemStack(Material.DIAMOND_SWORD);
+		ItemMeta meta = item.getItemMeta();
+		meta.setDisplayName("§bVergiftungsschwert Tier 2");
+		Lores.add("§aFortress§8-§aCombat§8-§aItem");
+		Lores.add("§9§m------------------------------");
+		Lores.add("§650%-ige Chance, dass dein Gegner verlangsamt wird.");
+		Lores.add("§9§m------------------------------");
+		Lores.add("§aBesitzer: §e{USER}".replace("{USER}", p.getName()));
+		meta.setLore(Lores);
+		item.setItemMeta(meta);
+		Lores.clear();
+		return item;
+	}
+
 }
