@@ -6,6 +6,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import me.filipzocktan.fcicrafting.Commands.FCICRCommand;
+import me.filipzocktan.fcicrafting.Commands.FCICRCommand_in_Dev;
 import me.filipzocktan.fcicrafting.Commands.GetEffectSwordCommand;
 
 public class FCICrafting extends JavaPlugin {
@@ -20,6 +21,8 @@ public class FCICrafting extends JavaPlugin {
 		GetEffectSwordCommand cGetEffectSwordCommand = new GetEffectSwordCommand();
 		this.getCommand("gefs").setExecutor(cGetEffectSwordCommand);
 		this.getCommand("geteffectsword").setExecutor(cGetEffectSwordCommand);
+		FCICRCommand_in_Dev cFcicrCommand_in_Dev = new FCICRCommand_in_Dev();
+		this.getCommand("fcicrdev").setExecutor(cFcicrCommand_in_Dev);
 		
 		for(Player p : Bukkit.getOnlinePlayers()){
 			p.sendMessage("§d§m----------------------------");

@@ -5,6 +5,8 @@ main: me.filipzocktan.fcicrafting.FCICrafting
 commands:
   fcicr:
     description: Zeigt Plugininfo an.
+  fcicrdev:
+    description: Zeigt Plugininfo an.
   fcicrafting:
     description: Zeigt Plugininfo an.
   fortresscombat1crafting:
