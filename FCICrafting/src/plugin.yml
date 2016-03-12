@@ -1,5 +1,5 @@
-name: FCIChat
-version: 1.3
+name: FCICrafting
+version: 1.0
 author: Filip Zocktan
 main: me.filipzocktan.fcicrafting.FCICrafting
 commands:
