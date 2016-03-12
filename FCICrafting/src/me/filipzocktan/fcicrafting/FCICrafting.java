@@ -16,7 +16,6 @@ public class FCICrafting extends JavaPlugin {
 		getCommand("fortresscombat1crafting").setExecutor(cFcicrCommand);
 		
 		for(Player p : Bukkit.getOnlinePlayers()){
-
 			p.sendMessage("§d§m----------------------------");
 	        p.sendMessage("§bProject-Addons");
 	        p.sendMessage("§bPlugin by §aFilip Zocktan");
