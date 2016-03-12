@@ -166,9 +166,6 @@ public class FCICRCommand_in_Dev implements CommandExecutor {
 										inv.setItem(13, FERM);
 										inv.setItem(15, Schwertgenerator.getGiftT2(p));
 										p.openInventory(inv);
-										p.sendMessage("F F F");
-										p.sendMessage("F D F");
-										p.sendMessage("F F F");
 									} else {
 										if (args[0].equalsIgnoreCase("7")) {
 											p.sendMessage("N F N");
