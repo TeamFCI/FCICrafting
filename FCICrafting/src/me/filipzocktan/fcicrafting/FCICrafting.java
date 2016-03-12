@@ -5,6 +5,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.filipzocktan.fcicrafting.Commands.GetEffectSwordCommand;
+
 public class FCICrafting extends JavaPlugin {
 	
 	public void onEnable(){
@@ -14,6 +16,9 @@ public class FCICrafting extends JavaPlugin {
 		getCommand("fcfcr").setExecutor(cFcicrCommand);
 		getCommand("fcicrafting").setExecutor(cFcicrCommand);
 		getCommand("fortresscombat1crafting").setExecutor(cFcicrCommand);
+		GetEffectSwordCommand cGetEffectSwordCommand = new GetEffectSwordCommand();
+		getCommand("gefs").setExecutor(cGetEffectSwordCommand);
+		getCommand("geteffectsword").setExecutor(cGetEffectSwordCommand);
 		
 		for(Player p : Bukkit.getOnlinePlayers()){
 			p.sendMessage("§d§m----------------------------");
