@@ -47,7 +47,7 @@ public class Schwertgenerator {
 		meta.setDisplayName("ßb‹belkeitsschwert Tier 1");
 		Lores.add("ßaFortressß8-ßaCombatß8-ßaItem");
 		Lores.add("ß9ßm------------------------------");
-		Lores.add("ß625%-ige Chance dass deinem Gegner schlecht wird.");
+		Lores.add("ß625%-ige Chance, dass deinem Gegner schlecht wird.");
 		Lores.add("ß9ßm------------------------------");
 		Lores.add("ßaBesitzer: ße{USER}".replace("{USER}", p.getName()));
 		meta.setLore(Lores);
@@ -62,7 +62,37 @@ public class Schwertgenerator {
 		meta.setDisplayName("ßb‹belkeitsschwert Tier 2");
 		Lores.add("ßaFortressß8-ßaCombatß8-ßaItem");
 		Lores.add("ß9ßm------------------------------");
-		Lores.add("ß650%-ige Chance dass deinem Gegner schlecht wird.");
+		Lores.add("ß650%-ige Chance, dass deinem Gegner schlecht wird.");
+		Lores.add("ß9ßm------------------------------");
+		Lores.add("ßaBesitzer: ße{USER}".replace("{USER}", p.getName()));
+		meta.setLore(Lores);
+		item.setItemMeta(meta);
+		Lores.clear();
+		return item;
+	}
+
+	public static ItemStack getGiftT1(Player p) {
+		ItemStack item = new ItemStack(Material.DIAMOND_SWORD);
+		ItemMeta meta = item.getItemMeta();
+		meta.setDisplayName("ßbVergiftungsschwert Tier 1");
+		Lores.add("ßaFortressß8-ßaCombatß8-ßaItem");
+		Lores.add("ß9ßm------------------------------");
+		Lores.add("ß625%-ige Chance, dass dein Gegner vergiftet wird.");
+		Lores.add("ß9ßm------------------------------");
+		Lores.add("ßaBesitzer: ße{USER}".replace("{USER}", p.getName()));
+		meta.setLore(Lores);
+		item.setItemMeta(meta);
+		Lores.clear();
+		return item;
+	}
+
+	public static ItemStack getGiftT2(Player p) {
+		ItemStack item = new ItemStack(Material.DIAMOND_SWORD);
+		ItemMeta meta = item.getItemMeta();
+		meta.setDisplayName("ßbVergiftungsschwert Tier 2");
+		Lores.add("ßaFortressß8-ßaCombatß8-ßaItem");
+		Lores.add("ß9ßm------------------------------");
+		Lores.add("ß650%-ige Chance, dass dein Gegner vergiftet wird.");
 		Lores.add("ß9ßm------------------------------");
 		Lores.add("ßaBesitzer: ße{USER}".replace("{USER}", p.getName()));
 		meta.setLore(Lores);
