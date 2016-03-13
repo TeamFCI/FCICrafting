@@ -1,4 +1,4 @@
-package me.filipzocktan.fcicrafting.Inventorys;
+package de.teamfci.fcicrafting.Inventorys;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

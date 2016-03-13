@@ -1,7 +1,7 @@
 name: FCICrafting
 version: 1.2.1
-author: Filip Zocktan
-main: me.filipzocktan.fcicrafting.FCICrafting
+author: Filip Zocktan & HappyHappyBoy
+main: de.teamfci.fcicrafting.FCICrafting
 commands:
   fcicr:
     description: Zeigt Plugininfo an.

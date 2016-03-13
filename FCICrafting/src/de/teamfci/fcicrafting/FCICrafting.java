@@ -1,15 +1,15 @@
-package me.filipzocktan.fcicrafting;
+package de.teamfci.fcicrafting;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.filipzocktan.fcicrafting.Commands.FCICRCommand;
-import me.filipzocktan.fcicrafting.Commands.GetEffectSwordCommand;
-import me.filipzocktan.fcicrafting.Events.DamageListener;
-import me.filipzocktan.fcicrafting.Events.InventoryListener;
-import me.filipzocktan.fcicrafting.Events.PluginEnabeListener;
+import de.teamfci.fcicrafting.Commands.FCICRCommand;
+import de.teamfci.fcicrafting.Commands.GetEffectSwordCommand;
+import de.teamfci.fcicrafting.Events.DamageListener;
+import de.teamfci.fcicrafting.Events.InventoryListener;
+import de.teamfci.fcicrafting.Events.PluginEnabeListener;
 
 public class FCICrafting extends JavaPlugin {
 	

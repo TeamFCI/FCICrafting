@@ -1,11 +1,11 @@
-package me.filipzocktan.fcicrafting.Commands;
+package de.teamfci.fcicrafting.Commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import me.filipzocktan.fcicrafting.Items.Schwertgenerator;
+import de.teamfci.fcicrafting.Items.Schwertgenerator;
 
 public class GetEffectSwordCommand implements CommandExecutor {
 

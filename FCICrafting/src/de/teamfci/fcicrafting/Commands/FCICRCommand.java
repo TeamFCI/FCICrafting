@@ -1,23 +1,23 @@
-package me.filipzocktan.fcicrafting.Commands;
+package de.teamfci.fcicrafting.Commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import me.filipzocktan.fcicrafting.Inventorys.Page1;
-import me.filipzocktan.fcicrafting.Inventorys.Page10;
-import me.filipzocktan.fcicrafting.Inventorys.Page11;
-import me.filipzocktan.fcicrafting.Inventorys.Page12;
-import me.filipzocktan.fcicrafting.Inventorys.Page13;
-import me.filipzocktan.fcicrafting.Inventorys.Page2;
-import me.filipzocktan.fcicrafting.Inventorys.Page3;
-import me.filipzocktan.fcicrafting.Inventorys.Page4;
-import me.filipzocktan.fcicrafting.Inventorys.Page5;
-import me.filipzocktan.fcicrafting.Inventorys.Page6;
-import me.filipzocktan.fcicrafting.Inventorys.Page7;
-import me.filipzocktan.fcicrafting.Inventorys.Page8;
-import me.filipzocktan.fcicrafting.Inventorys.Page9;
+import de.teamfci.fcicrafting.Inventorys.Page1;
+import de.teamfci.fcicrafting.Inventorys.Page10;
+import de.teamfci.fcicrafting.Inventorys.Page11;
+import de.teamfci.fcicrafting.Inventorys.Page12;
+import de.teamfci.fcicrafting.Inventorys.Page13;
+import de.teamfci.fcicrafting.Inventorys.Page2;
+import de.teamfci.fcicrafting.Inventorys.Page3;
+import de.teamfci.fcicrafting.Inventorys.Page4;
+import de.teamfci.fcicrafting.Inventorys.Page5;
+import de.teamfci.fcicrafting.Inventorys.Page6;
+import de.teamfci.fcicrafting.Inventorys.Page7;
+import de.teamfci.fcicrafting.Inventorys.Page8;
+import de.teamfci.fcicrafting.Inventorys.Page9;
 
 public class FCICRCommand implements CommandExecutor {
 

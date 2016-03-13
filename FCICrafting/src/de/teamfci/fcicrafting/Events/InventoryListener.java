@@ -1,4 +1,4 @@
-package me.filipzocktan.fcicrafting.Events;
+package de.teamfci.fcicrafting.Events;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -13,20 +13,20 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import me.filipzocktan.fcicrafting.Inventorys.Page1;
-import me.filipzocktan.fcicrafting.Inventorys.Page10;
-import me.filipzocktan.fcicrafting.Inventorys.Page11;
-import me.filipzocktan.fcicrafting.Inventorys.Page12;
-import me.filipzocktan.fcicrafting.Inventorys.Page13;
-import me.filipzocktan.fcicrafting.Inventorys.Page2;
-import me.filipzocktan.fcicrafting.Inventorys.Page3;
-import me.filipzocktan.fcicrafting.Inventorys.Page4;
-import me.filipzocktan.fcicrafting.Inventorys.Page5;
-import me.filipzocktan.fcicrafting.Inventorys.Page6;
-import me.filipzocktan.fcicrafting.Inventorys.Page7;
-import me.filipzocktan.fcicrafting.Inventorys.Page8;
-import me.filipzocktan.fcicrafting.Inventorys.Page9;
-import me.filipzocktan.fcicrafting.Items.Schwertgenerator;
+import de.teamfci.fcicrafting.Inventorys.Page1;
+import de.teamfci.fcicrafting.Inventorys.Page10;
+import de.teamfci.fcicrafting.Inventorys.Page11;
+import de.teamfci.fcicrafting.Inventorys.Page12;
+import de.teamfci.fcicrafting.Inventorys.Page13;
+import de.teamfci.fcicrafting.Inventorys.Page2;
+import de.teamfci.fcicrafting.Inventorys.Page3;
+import de.teamfci.fcicrafting.Inventorys.Page4;
+import de.teamfci.fcicrafting.Inventorys.Page5;
+import de.teamfci.fcicrafting.Inventorys.Page6;
+import de.teamfci.fcicrafting.Inventorys.Page7;
+import de.teamfci.fcicrafting.Inventorys.Page8;
+import de.teamfci.fcicrafting.Inventorys.Page9;
+import de.teamfci.fcicrafting.Items.Schwertgenerator;
 
 public class InventoryListener implements Listener {
 

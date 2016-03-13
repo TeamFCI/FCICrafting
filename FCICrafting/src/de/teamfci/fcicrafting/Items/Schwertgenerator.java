@@ -1,4 +1,4 @@
-package me.filipzocktan.fcicrafting.Items;
+package de.teamfci.fcicrafting.Items;
 
 import java.util.LinkedList;
 import java.util.List;

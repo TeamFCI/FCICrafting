@@ -1,4 +1,4 @@
-package me.filipzocktan.fcicrafting.Events;
+package de.teamfci.fcicrafting.Events;
 
 import java.util.Random;
 
