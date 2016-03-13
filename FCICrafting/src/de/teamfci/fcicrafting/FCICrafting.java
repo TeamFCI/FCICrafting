@@ -1,7 +1,5 @@
 package de.teamfci.fcicrafting;
 
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -25,14 +23,6 @@ public class FCICrafting extends JavaPlugin {
 		GetEffectSwordCommand cGetEffectSwordCommand = new GetEffectSwordCommand();
 		this.getCommand("gefs").setExecutor(cGetEffectSwordCommand);
 		this.getCommand("geteffectsword").setExecutor(cGetEffectSwordCommand);
-		
-		for(Player p : Bukkit.getOnlinePlayers()){
-			p.sendMessage("§d§m----------------------------");
-	        p.sendMessage("§bProject-Addons");
-	        p.sendMessage("§bPlugin by §aFilip Zocktan");
-	        p.sendMessage("§b/fcicr für weitere Infos");
-	        p.sendMessage("§d§m----------------------------");
-		}
 	}
 	
 	public void onDisable(){
