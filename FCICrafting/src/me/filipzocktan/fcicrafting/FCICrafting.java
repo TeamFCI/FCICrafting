@@ -7,12 +7,17 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import me.filipzocktan.fcicrafting.Commands.FCICRCommand;
 import me.filipzocktan.fcicrafting.Commands.GetEffectSwordCommand;
+import me.filipzocktan.fcicrafting.Events.DamageListener;
+import me.filipzocktan.fcicrafting.Events.InventoryListener;
+import me.filipzocktan.fcicrafting.Events.PluginEnabeListener;
 
 public class FCICrafting extends JavaPlugin {
 	
 	public void onEnable(){
 		PluginManager pm = this.getServer().getPluginManager();
 		pm.registerEvents(new PluginEnabeListener(), this);
+		pm.registerEvents(new InventoryListener(), this);
+		pm.registerEvents(new DamageListener(), this);
 		FCICRCommand cFcicrCommand = new FCICRCommand();
 		this.getCommand("fcicr").setExecutor(cFcicrCommand);
 		this.getCommand("fcicrafting").setExecutor(cFcicrCommand);

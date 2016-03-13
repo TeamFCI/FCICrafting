@@ -1,4 +1,4 @@
-package me.filipzocktan.fcicrafting;
+package me.filipzocktan.fcicrafting.Events;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

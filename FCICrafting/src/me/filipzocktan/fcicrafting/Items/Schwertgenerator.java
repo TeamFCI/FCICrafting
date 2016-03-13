@@ -104,7 +104,7 @@ public class Schwertgenerator {
 	public static ItemStack getSlowT1(Player p) {
 		ItemStack item = new ItemStack(Material.DIAMOND_SWORD);
 		ItemMeta meta = item.getItemMeta();
-		meta.setDisplayName("§bVergiftungsschwert Tier 1");
+		meta.setDisplayName("§bVerlansamungsschwert Tier 1");
 		Lores.add("§aFortress§8-§aCombat§8-§aItem");
 		Lores.add("§9§m------------------------------");
 		Lores.add("§625%-ige Chance, dass dein Gegner verlangsamt wird.");
@@ -120,7 +120,7 @@ public class Schwertgenerator {
 
 		ItemStack item = new ItemStack(Material.DIAMOND_SWORD);
 		ItemMeta meta = item.getItemMeta();
-		meta.setDisplayName("§bVergiftungsschwert Tier 2");
+		meta.setDisplayName("§bVerlansamungsschwert Tier 2");
 		Lores.add("§aFortress§8-§aCombat§8-§aItem");
 		Lores.add("§9§m------------------------------");
 		Lores.add("§650%-ige Chance, dass dein Gegner verlangsamt wird.");
@@ -138,7 +138,7 @@ public class Schwertgenerator {
 		meta.setDisplayName("§bWitherschwert Tier 1");
 		Lores.add("§aFortress§8-§aCombat§8-§aItem");
 		Lores.add("§9§m------------------------------");
-		Lores.add("§625%-ige Chance, dass dein Gegner verlangsamt wird.");
+		Lores.add("§625%-ige Chance, dass dein Gegner den Wither-Effekt bekommt.");
 		Lores.add("§9§m------------------------------");
 		Lores.add("§aBesitzer: §e{USER}".replace("{USER}", p.getName()));
 		meta.setLore(Lores);
@@ -153,7 +153,7 @@ public class Schwertgenerator {
 		meta.setDisplayName("§bWitherschwert Tier 2");
 		Lores.add("§aFortress§8-§aCombat§8-§aItem");
 		Lores.add("§9§m------------------------------");
-		Lores.add("§650%-ige Chance, dass dein Gegner verlangsamt wird.");
+		Lores.add("§650%-ige Chance, dass dein Gegner den Wither-Effekt bekommt.");
 		Lores.add("§9§m------------------------------");
 		Lores.add("§aBesitzer: §e{USER}".replace("{USER}", p.getName()));
 		meta.setLore(Lores);
