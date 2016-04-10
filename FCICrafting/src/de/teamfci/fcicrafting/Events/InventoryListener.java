@@ -18,6 +18,8 @@ import de.teamfci.fcicrafting.Inventorys.Page10;
 import de.teamfci.fcicrafting.Inventorys.Page11;
 import de.teamfci.fcicrafting.Inventorys.Page12;
 import de.teamfci.fcicrafting.Inventorys.Page13;
+import de.teamfci.fcicrafting.Inventorys.Page14;
+import de.teamfci.fcicrafting.Inventorys.Page15;
 import de.teamfci.fcicrafting.Inventorys.Page2;
 import de.teamfci.fcicrafting.Inventorys.Page3;
 import de.teamfci.fcicrafting.Inventorys.Page4;
@@ -74,6 +76,12 @@ public class InventoryListener implements Listener {
 			if (inv.equals(Page9.inv)) {
 				Page10.open(p);
 			}
+			if(inv.equals(Page10.inv)){
+				Page14.open(p);
+			}
+			if(inv.equals(Page14.inv)){
+				Page15.open(p);
+			}
 		}
 		if (e.getSlot() == 18) {
 			if (inv.equals(Page2.inv)) {
@@ -102,6 +110,12 @@ public class InventoryListener implements Listener {
 			}
 			if (inv.equals(Page10.inv)) {
 				Page9.open(p);
+			}
+			if(inv.equals(Page14.inv)){
+				Page10.open(p);
+			}
+			if(inv.equals(Page15.inv)){
+				Page14.open(p);
 			}
 		}
 		
@@ -263,15 +277,6 @@ public class InventoryListener implements Listener {
 														p.closeInventory();
 														valid = true;
 					}}}}}}}}}
-//					p.getInventory().remove(GLASSCHEIBE_LILA);
-//					p.getInventory().remove(GLASSCHEIBE_LILA2);
-//					p.getInventory().remove(GLASSCHEIBE_LILA3);
-//					p.getInventory().remove(GLASSCHEIBE_LILA4);
-//					p.getInventory().remove(GLASSCHEIBE_LILA5);
-//					p.getInventory().remove(GLASSCHEIBE_LILA6);
-//					p.getInventory().remove(GLASSCHEIBE_LILA7);
-//					p.getInventory().remove(GLASSCHEIBE_LILA8);
-//					p.getInventory().remove(GLASSCHEIBE_LILA9);
 					if(valid == false){
 						e.setCancelled(true);
 					}

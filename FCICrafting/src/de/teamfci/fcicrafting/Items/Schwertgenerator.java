@@ -161,5 +161,35 @@ public class Schwertgenerator {
 		Lores.clear();
 		return item;
 	}
+	
+	public static ItemStack getSchwachT1(Player p){
+		ItemStack item = new ItemStack(Material.DIAMOND_SWORD);
+		ItemMeta meta = item.getItemMeta();
+		meta.setDisplayName("§bSchwächeschwert Tier 1");
+		Lores.add("§aFortress§8-§aCombat§8-§aItem");
+		Lores.add("§9§m------------------------------");
+		Lores.add("§625%-ige Chance, dass dein Gegner geschwächt wird.");
+		Lores.add("§9§m------------------------------");
+		Lores.add("§aBesitzer: §e{USER}".replace("{USER}", p.getName()));
+		meta.setLore(Lores);
+		item.setItemMeta(meta);
+		Lores.clear();
+		return item;
+	}
+	
+	public static ItemStack getSchwachT2(Player p){
+		ItemStack item = new ItemStack(Material.DIAMOND_SWORD);
+		ItemMeta meta = item.getItemMeta();
+		meta.setDisplayName("§bSchwächeschwert Tier 2");
+		Lores.add("§aFortress§8-§aCombat§8-§aItem");
+		Lores.add("§9§m------------------------------");
+		Lores.add("§650%-ige Chance, dass dein Gegner geschwächt wird.");
+		Lores.add("§9§m------------------------------");
+		Lores.add("§aBesitzer: §e{USER}".replace("{USER}", p.getName()));
+		meta.setLore(Lores);
+		item.setItemMeta(meta);
+		Lores.clear();
+		return item;
+	}
 
 }
